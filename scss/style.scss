@@ -50,7 +50,7 @@ h4 {
 
 section {
     background-color: $rosa; 
-    padding: 50px;  
+    padding: 5px;  
 }
 
 article {
@@ -297,7 +297,7 @@ textarea {
         font-size: 15px;
     }
 
-    .articulo-principal__div-parrafo.div-parrafo__parrafo-principal{
+    .articulo-principal .articulo-principal__div-parrafo .div-parrafo__parrafo-principal{
         font-size: 15px;
         padding: 10px;
     }
@@ -324,7 +324,7 @@ textarea {
         font-size: 20px;
     }
 
-    .articulo-principal__div-parrafo.div-parrafo__parrafo-principal{
+    .articulo-principal .articulo-principal__div-parrafo .div-parrafo__parrafo-principal{
         font-size: 20px;
         padding: 15px;
     }
@@ -354,7 +354,7 @@ textarea {
     
     }
 
-    .div-parrafo__parrafo-principal{
+    .articulo-principal .articulo-principal__div-parrafo .div-parrafo__parrafo-principal{
         font-size: 25px;
         margin: auto;
         padding: 20px;
@@ -388,7 +388,7 @@ textarea {
     
     }
 
-    .articulo-principal__div-parrafo.div-parrafo__parrafo-principal{
+    .articulo-principal .articulo-principal__div-parrafo .div-parrafo__parrafo-principal{
         font-size: 30px;
         margin: auto;
         padding: 25px;
