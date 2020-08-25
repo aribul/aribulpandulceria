@@ -212,7 +212,7 @@ textarea {
     font-size: 25px; }
   h4 {
     font-size: 15px; }
-  .articulo-principal__div-parrafo.div-parrafo__parrafo-principal {
+  .articulo-principal .articulo-principal__div-parrafo .div-parrafo__parrafo-principal {
     font-size: 15px;
     padding: 10px; } }
 
@@ -227,7 +227,7 @@ textarea {
     font-size: 30px; }
   h4 {
     font-size: 20px; }
-  .articulo-principal__div-parrafo.div-parrafo__parrafo-principal {
+  .articulo-principal .articulo-principal__div-parrafo .div-parrafo__parrafo-principal {
     font-size: 20px;
     padding: 15px; } }
 
@@ -242,7 +242,7 @@ textarea {
     font-size: 30px; }
   h4 {
     font-size: 20px; }
-  .div-parrafo__parrafo-principal {
+  .articulo-principal .articulo-principal__div-parrafo .div-parrafo__parrafo-principal {
     font-size: 25px;
     margin: auto;
     padding: 20px; }
@@ -260,7 +260,7 @@ textarea {
     font-size: 30px; }
   h4 {
     font-size: 20px; }
-  .articulo-principal__div-parrafo.div-parrafo__parrafo-principal {
+  .articulo-principal .articulo-principal__div-parrafo .div-parrafo__parrafo-principal {
     font-size: 30px;
     margin: auto;
     padding: 25px; }
