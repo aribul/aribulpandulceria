@@ -3,12 +3,14 @@
 /*TAMAÑOS*/
 header {
   background-color: #F7F1E3;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 h1 {
-  font-size: 30px;
-  display: inline;
-  width: fit-content; }
+  font-size: 30px; }
 
 h2 {
   font-size: 15px;
@@ -50,14 +52,14 @@ article {
 footer {
   background-color: #F7F1E3;
   padding-top: 20px; }
-  footer footer p {
-    margin: auto;
+  footer p.text-center {
     padding-bottom: 5px;
-    text-align: center; }
-    footer footer p a {
+    margin: 0;
+    padding: 0.5em; }
+    footer p.text-center a {
       text-decoration: none;
       color: #323232; }
-      footer footer p a a:hover {
+      footer p.text-center a a:hover {
         color: #f8afd4; }
 
 p {
@@ -112,8 +114,15 @@ textarea {
 
 .menu-nav {
   background-color: #fcf0d6;
-  border: #323232 solid 1px;
-  border-radius: 50px; }
+  border: none;
+  align-items: flex-end; }
+
+.navbar-toggler {
+  padding: .02rem .5rem;
+  font-size: 1.2rem; }
+
+a.menu-item.navbar-brand {
+  font-size: 1em; }
 
 .articulo-principal {
   padding: 10px;

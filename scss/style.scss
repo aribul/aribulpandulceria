@@ -14,13 +14,14 @@ $altoform:20px;
 header {
     background-color: $colorcrema;
     padding-bottom: 10px;
-       
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1{
     font-size: 30px;
-    display: inline;
-    width: fit-content;
 }
 
 h2{
@@ -69,10 +70,10 @@ footer {
     background-color: $colorcrema;
     padding-top: 20px;
 
-    footer p{
-    margin: auto;
+    p.text-center{
     padding-bottom: 5px;
-    text-align: center;
+    margin: 0;
+    padding: 0.5em;
 
         a{
         text-decoration: none;
@@ -150,9 +151,17 @@ textarea {
 
 .menu-nav { 
     background-color: #fcf0d6;
-    border: $negro solid 1px;
-    border-radius: 50px;
+    border: none;
+    align-items: flex-end;
+}
 
+.navbar-toggler {
+    padding: .02rem .5rem;
+    font-size: 1.2rem;
+}
+
+a.menu-item.navbar-brand {
+    font-size: 1em;
 }
 
 .articulo-principal {
