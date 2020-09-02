@@ -14,10 +14,12 @@ $altoform:20px;
 header {
     background-color: $colorcrema;
     padding-bottom: 10px;
-}   
+       
+}
 
 h1{
     font-size: 30px;
+    display: inline;
 }
 
 h2{
@@ -27,6 +29,7 @@ h2{
     text-align: center;
     letter-spacing: 2px;
     margin: 10px;
+    display: block;
 }
 
 h3 {
@@ -59,10 +62,6 @@ article {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-}
-
-nav{
-
 }
 
 footer {
@@ -230,6 +229,7 @@ textarea {
 .div__logo{
     height: $altologo;
     padding: 10px;
+    display: inline-block;
 
     .div__logo-imagen {
         height: 100%;
