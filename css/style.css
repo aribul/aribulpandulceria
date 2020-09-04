@@ -216,6 +216,10 @@ a.menu-item.nav-item.nav-link {
   font-family: "Josefin Sans", sans-serif;
   background-color: pink; }
 
+.div-tarjetas {
+  max-width: 80%;
+  margin: auto; }
+
 @media only screen and (min-width: 554px) {
   .div__logo {
     height: 125px; }
@@ -237,7 +241,10 @@ a.menu-item.nav-item.nav-link {
   .inputEnviar {
     font-size: 14px; }
   .ul__li-medios-de-pago {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .nuestraHistoria {
+    font-size: 12px;
+    padding: 0px 20px 10px 20px; } }
 
 @media only screen and (min-width: 768px) {
   .div__logo {
@@ -268,7 +275,10 @@ a.menu-item.nav-item.nav-link {
   .inputEnviar {
     font-size: 18px; }
   .ul__li-medios-de-pago {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .nuestraHistoria {
+    font-size: 14px;
+    padding: 0px 25px 15px 25px; } }
 
 @media only screen and (min-width: 992px) {
   .div__logo {
@@ -286,7 +296,9 @@ a.menu-item.nav-item.nav-link {
     margin: auto;
     padding: 20px; }
   .pedidos {
-    width: 700px; } }
+    width: 700px; }
+  .div-tarjetas {
+    max-width: 50%; } }
 
 @media only screen and (min-width: 1200px) {
   .div__logo {

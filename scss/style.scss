@@ -291,6 +291,10 @@ a.menu-item.nav-item.nav-link {
     background-color: pink;
 }
 
+.div-tarjetas{
+    max-width: 80%;
+    margin: auto;
+}
 @media only screen and (min-width: 554px){
     .div__logo{
         height: ($altologo)+25;
@@ -331,6 +335,11 @@ a.menu-item.nav-item.nav-link {
 
     .ul__li-medios-de-pago{
         font-size: 12px;
+    }
+
+    .nuestraHistoria{
+        font-size: 12px;
+        padding: 0px 20px 10px 20px;
     }
 }
 
@@ -389,6 +398,11 @@ a.menu-item.nav-item.nav-link {
     .ul__li-medios-de-pago{
         font-size: 14px;
     }
+
+    .nuestraHistoria{
+        font-size: 14px;
+        padding: 0px 25px 15px 25px;
+    }
     
 }
 
@@ -424,6 +438,10 @@ a.menu-item.nav-item.nav-link {
 
     .pedidos{
         width: 700px;
+    }
+
+    .div-tarjetas{
+        max-width: 50%;
     }
 
 }
