@@ -293,6 +293,10 @@ a.menu-item.nav-item.nav-link {
     background-color: pink;
 }
 
+.carousel-height{
+    height:20em;
+}
+
 @media only screen and (min-width: 554px){
     .div__logo{
         height: ($altologo)+25;
