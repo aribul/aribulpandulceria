@@ -78,7 +78,7 @@ footer {
         a{
         text-decoration: none;
         color: $negro;
-        font-size: 1em;
+        font-size: 0.7em;
 
             a:hover{
         color: $rosa;
@@ -92,8 +92,6 @@ p {
     font-family: "Source Code Pro", monospace;
     font-size: 10px;
     text-align: justify;
-    margin-left: 10px;
-
         var {
         font-weight: bolder;
         }
@@ -235,9 +233,6 @@ a.menu-item.nav-item.nav-link {
 
 .redesDeContacto:hover{
     background-color: pink;
-}
-
-.redesDeContacto a:hover{
     color: white ;
 }
 
@@ -261,7 +256,7 @@ a.menu-item.nav-item.nav-link {
 
 .ul__li-medios-de-pago{
     color: black;
-    font-size: 18px;
+    font-size: 10px;
     font-family: "Source Code Pro", monospace;
     text-align: left;
 }
@@ -269,8 +264,9 @@ a.menu-item.nav-item.nav-link {
 .nuestraHistoria {
     text-align: left;
     display: inline-block;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .pedidos {
@@ -316,6 +312,10 @@ a.menu-item.nav-item.nav-link {
         font-size: 15px;
     }
 
+    p{
+        font-size: 12px;
+    }
+
     .articulo-principal .articulo-principal__div-parrafo .div-parrafo__parrafo-principal{
         font-size: 15px;
         padding: 10px;
@@ -327,6 +327,10 @@ a.menu-item.nav-item.nav-link {
 
     .inputEnviar {
         font-size: 14px;
+    }
+
+    .ul__li-medios-de-pago{
+        font-size: 12px;
     }
 }
 
@@ -349,6 +353,10 @@ a.menu-item.nav-item.nav-link {
 
     h4{
         font-size: 25px;
+    }
+
+    p{
+        font-size: 14px;
     }
 
     .articulo-principal .articulo-principal__div-parrafo .div-parrafo__parrafo-principal{
@@ -378,6 +386,9 @@ a.menu-item.nav-item.nav-link {
         font-size: 18px;
         }
 
+    .ul__li-medios-de-pago{
+        font-size: 14px;
+    }
     
 }
 
