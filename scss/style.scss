@@ -78,6 +78,7 @@ footer {
         a{
         text-decoration: none;
         color: $negro;
+        font-size: 1em;
 
             a:hover{
         color: $rosa;
@@ -90,8 +91,8 @@ p {
     color: $negro;
     font-family: "Source Code Pro", monospace;
     font-size: 10px;
-    text-align: left;
-    margin-left: 40px;
+    text-align: justify;
+    margin-left: 10px;
 
         var {
         font-weight: bolder;
@@ -273,10 +274,11 @@ a.menu-item.nav-item.nav-link {
 }
 
 .pedidos {
-    text-align: left;
+    text-align: center;
     display: inline-block;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
     
 }
 
@@ -291,10 +293,6 @@ a.menu-item.nav-item.nav-link {
 .inputEnviar {
     font-family: "Josefin Sans", sans-serif;
     background-color: pink;
-}
-
-.carousel-height{
-    height:20em;
 }
 
 @media only screen and (min-width: 554px){
