@@ -1,5 +1,5 @@
 /*COLORES*/
-$rosa:#f8afd4;
+$rosa:#f8bbd0;
 $colorcrema: #F7F1E3;
 $negro:#323232;
 
@@ -91,7 +91,7 @@ p {
     color: $negro;
     font-family: "Source Code Pro", monospace;
     font-size: 10px;
-    text-align: justify;
+    text-align: left;
         var {
         font-weight: bolder;
         }
@@ -261,22 +261,24 @@ a.menu-item.nav-item.nav-link {
     text-align: left;
 }
 
-.nuestraHistoria {
-    text-align: left;
+.pedidos {
     display: inline-block;
     margin: 0px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.pedidos {
-    text-align: center;
-    display: inline-block;
-    margin: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-    
+.parrafos-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        .nuestraHistoria {
+            @extend .pedidos
+        }
 }
+
+
 
 .divForm {
     display: flex;
@@ -294,7 +296,22 @@ a.menu-item.nav-item.nav-link {
 .div-tarjetas{
     max-width: 80%;
     margin: auto;
+    margin-top: 15px;
+
+    .card{
+        background-color: #ffeeff;
+    }
+    .card-body{
+        background-color:#ffeeff;
+        h5{
+
+        }
+        p{
+
+        }
+    }
 }
+
 @media only screen and (min-width: 554px){
     .div__logo{
         height: ($altologo)+25;
@@ -448,7 +465,7 @@ a.menu-item.nav-item.nav-link {
 
 @media only screen and (min-width: 1200px) {
     .div__logo{
-        height: ($altologo)+100;
+        height: ($altologo)+80;
     }
 
     h1{
