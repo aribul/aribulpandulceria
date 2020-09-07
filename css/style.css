@@ -66,22 +66,94 @@ footer {
 p {
   color: #323232;
   font-family: "Source Code Pro", monospace;
-  font-size: 10px;
+  font-size: 0.9em;
   text-align: left; }
   p var {
     font-weight: bolder; }
 
-tr th {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 18px;
-  color: #964d00; }
+/*PRODUCTOS*/
+ul, ol {
+  list-style: none; }
 
-tr td {
-  font-family: "Source Code Pro", monospace;
-  font-size: 18px; }
-  tr td td.tabla .tabla__lista .tabla__lista-elemento {
-    list-style-image: url(images/pandulce1.ico); }
+.sabor {
+  padding: 10px;
+  font-size: 0.9em;
+  max-width: 500px; }
 
+.sabor > li {
+  padding: 5px; }
+
+.sabor li > ul {
+  display: none;
+  position: relative; }
+
+.sabor li:hover > ul {
+  display: block; }
+
+/*NAV*/
+.menu-nav {
+  background-color: #fcf0d6;
+  border: none;
+  align-items: flex-end; }
+
+.navbar-toggler {
+  padding: .02rem .5rem;
+  font-size: 1.2rem; }
+
+a.menu-item.navbar-brand {
+  font-size: 1em; }
+
+a.menu-item.nav-item.nav-link {
+  font-size: 12px; }
+
+/*INDEX*/
+.articulo-principal {
+  padding: 10px;
+  grid-area: articleIndex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .articulo-principal .articulo-principal__div-img1, .articulo-principal .articulo-principal__div-img2 {
+    flex: 1;
+    min-width: 20px; }
+    .articulo-principal .articulo-principal__div-img1 .imagenPrincipal1, .articulo-principal .articulo-principal__div-img2 .imagenPrincipal1, .articulo-principal .articulo-principal__div-img2 .imagenPrincipal2 {
+      width: 100%; }
+  .articulo-principal .articulo-principal__div-parrafo {
+    flex: 1; }
+    .articulo-principal .articulo-principal__div-parrafo .div-parrafo__parrafo-principal {
+      color: #323232;
+      font-family: "Source Code Pro", monospace;
+      font-size: 10px;
+      margin: auto;
+      padding: 10px;
+      font-weight: bold;
+      text-align: center; }
+
+.imagenRedesSociales {
+  width: 2em; }
+
+/*CONTACTO*/
+.div-contactanos {
+  margin-top: 10px;
+  margin-bottom: 25px; }
+  .div-contactanos .div-contactanos__redes-contacto {
+    color: #f8bbd0;
+    font-family: "Source Code Pro", monospace;
+    font-size: 10px;
+    text-align: center;
+    padding: 5px;
+    margin: 0px; }
+    .div-contactanos .div-contactanos__redes-contacto a {
+      text-decoration: none;
+      color: #323232; }
+
+.redesDeContacto:hover {
+  background-color: pink;
+  color: white; }
+
+/*FORM CONTACTO*/
 fieldset {
   border: 0px;
   padding-top: 30px; }
@@ -112,65 +184,16 @@ textarea {
   height: 20px;
   border-radius: 10px; }
 
-.menu-nav {
-  background-color: #fcf0d6;
-  border: none;
-  align-items: flex-end; }
-
-.navbar-toggler {
-  padding: .02rem .5rem;
-  font-size: 1.2rem; }
-
-a.menu-item.navbar-brand {
-  font-size: 1em; }
-
-a.menu-item.nav-item.nav-link {
-  font-size: 12px; }
-
-.articulo-principal {
-  padding: 10px;
-  grid-area: articleIndex;
+.divForm {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
-  .articulo-principal .articulo-principal__div-img1, .articulo-principal .articulo-principal__div-img2 {
-    flex: 1;
-    min-width: 20px; }
-    .articulo-principal .articulo-principal__div-img1 .imagenPrincipal1, .articulo-principal .articulo-principal__div-img2 .imagenPrincipal1, .articulo-principal .articulo-principal__div-img2 .imagenPrincipal2 {
-      width: 100%; }
-  .articulo-principal .articulo-principal__div-parrafo {
-    flex: 1; }
-    .articulo-principal .articulo-principal__div-parrafo .div-parrafo__parrafo-principal {
-      color: #323232;
-      font-family: "Source Code Pro", monospace;
-      font-size: 10px;
-      margin: auto;
-      padding: 10px;
-      font-weight: bold;
-      text-align: center; }
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center; }
 
-.imagenRedesSociales {
-  width: 2em; }
-
-.div-contactanos {
-  margin-top: 10px;
-  margin-bottom: 25px; }
-  .div-contactanos .div-contactanos__redes-contacto {
-    color: #f8bbd0;
-    font-family: "Source Code Pro", monospace;
-    font-size: 10px;
-    text-align: center;
-    padding: 5px;
-    margin: 0px; }
-    .div-contactanos .div-contactanos__redes-contacto a {
-      text-decoration: none;
-      color: #323232; }
-
-.redesDeContacto:hover {
-  background-color: pink;
-  color: white; }
+.inputEnviar {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: pink; }
 
 .div__logo {
   height: 100px;
@@ -182,7 +205,7 @@ a.menu-item.nav-item.nav-link {
 .pieDeTabla {
   color: #323232;
   font-family: "Source Code Pro", monospace;
-  font-size: 20px;
+  font-size: 0.9em;
   text-align: center; }
 
 .ul__li-medios-de-pago {
@@ -202,17 +225,6 @@ a.menu-item.nav-item.nav-link {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-
-.divForm {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center; }
-
-.inputEnviar {
-  font-family: "Josefin Sans", sans-serif;
-  background-color: pink; }
 
 .div-tarjetas {
   max-width: 80%;
@@ -301,7 +313,9 @@ a.menu-item.nav-item.nav-link {
   .pedidos, .parrafos-about .nuestraHistoria {
     width: 700px; }
   .div-tarjetas {
-    max-width: 50%; } }
+    max-width: 50%; }
+  .sabor {
+    width: 500px; } }
 
 @media only screen and (min-width: 1200px) {
   .div__logo {

@@ -90,64 +90,39 @@ footer {
 p {
     color: $negro;
     font-family: "Source Code Pro", monospace;
-    font-size: 10px;
+    font-size: 0.9em;
     text-align: left;
         var {
         font-weight: bolder;
         }
 }
 
-tr {
-    th {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 18px;
-    color: #964d00;
+/*PRODUCTOS*/
+
+ul, ol{
+    list-style: none;
+  }
+  
+.sabor{
+    padding:10px;
+    font-size: 0.9em;
+    max-width: 500px;
 }
-    td {
-    font-family: "Source Code Pro", monospace;
-    font-size: 18px;
 
-        td.tabla .tabla__lista .tabla__lista-elemento{
-        list-style-image:
-        url(images/pandulce1.ico) ;
-        }
+.sabor > li{
+    padding:5px;
+}
 
+.sabor li > ul{
+    display:none;
+    position:relative;
     }
+
+.sabor li:hover > ul{
+    display:block;
 }
 
-fieldset {
-    border: 0px;
-    padding-top: 30px;
-}
-
-form {
-    color: $negro;
-    font-family: "Source Code Pro", monospace;
-    font-size: 12px;
-    display: inline-block;
-}
-
-@mixin forma ($margenform, $bordeform, $anchoform, $altoform){
-    
-    margin: $margenform;
-    border: $bordeform;
-    width: $anchoform;
-    height: $altoform; 
-}
-input  {
-    @include  forma ($margenform, $bordeform, $anchoform, $altoform);
-    border-radius: 50px;
-}
-
-select{
-    @include  forma ($margenform, $bordeform, $anchoform, $altoform);
-}
-
-textarea {
-    @include  forma ($margenform, $bordeform, $anchoform, $altoform);
-    border-radius: 10px;
-}
-
+/*NAV*/
 .menu-nav { 
     background-color: #fcf0d6;
     border: none;
@@ -167,6 +142,7 @@ a.menu-item.nav-item.nav-link {
     font-size: 12px;
 }
 
+/*INDEX*/
 .articulo-principal {
     padding: 10px;
     grid-area: articleIndex;
@@ -210,6 +186,7 @@ a.menu-item.nav-item.nav-link {
     width: 2em;
 }
 
+/*CONTACTO*/
 .div-contactanos {
     margin-top: 10px;
     margin-bottom: 25px;
@@ -229,11 +206,57 @@ a.menu-item.nav-item.nav-link {
     }
 }
 
-
-
 .redesDeContacto:hover{
     background-color: pink;
     color: white ;
+}
+
+/*FORM CONTACTO*/
+
+fieldset {
+    border: 0px;
+    padding-top: 30px;
+}
+
+form {
+    color: $negro;
+    font-family: "Source Code Pro", monospace;
+    font-size: 12px;
+    display: inline-block;
+}
+
+@mixin forma ($margenform, $bordeform, $anchoform, $altoform){
+    
+    margin: $margenform;
+    border: $bordeform;
+    width: $anchoform;
+    height: $altoform; 
+}
+input  {
+    @include  forma ($margenform, $bordeform, $anchoform, $altoform);
+    border-radius: 50px;
+}
+
+select{
+    @include  forma ($margenform, $bordeform, $anchoform, $altoform);
+}
+
+textarea {
+    @include  forma ($margenform, $bordeform, $anchoform, $altoform);
+    border-radius: 10px;
+}
+
+.divForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputEnviar {
+    font-family: "Josefin Sans", sans-serif;
+    background-color: pink;
 }
 
 .div__logo{
@@ -250,7 +273,7 @@ a.menu-item.nav-item.nav-link {
 .pieDeTabla {
     color: #323232;
     font-family: "Source Code Pro", monospace;
-    font-size: 20px;
+    font-size: 0.9em;
     text-align: center;
 }
 
@@ -276,21 +299,6 @@ a.menu-item.nav-item.nav-link {
         .nuestraHistoria {
             @extend .pedidos
         }
-}
-
-
-
-.divForm {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.inputEnviar {
-    font-family: "Josefin Sans", sans-serif;
-    background-color: pink;
 }
 
 .div-tarjetas{
@@ -461,6 +469,9 @@ a.menu-item.nav-item.nav-link {
         max-width: 50%;
     }
 
+    .sabor{
+        width: 500px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
