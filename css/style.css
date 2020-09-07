@@ -15,16 +15,17 @@ h1 {
 h2 {
   font-size: 13px;
   color: #f8bbd0;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Lobster Two', cursive;
+  font-weight: bold;
   text-align: center;
   letter-spacing: 2px;
-  margin: 10px;
+  margin-bottom: 10px;
   display: block; }
 
 h3 {
   font-size: 12px;
   color: #323232;
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Pragati Narrow', sans-serif;
   font-weight: bold;
   text-align: center;
   margin-top: auto;
@@ -34,7 +35,7 @@ h3 {
 h4 {
   font-size: 11px;
   color: #323232;
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Pragati Narrow', sans-serif;
   font-weight: bold;
   text-align: left; }
 
@@ -51,21 +52,20 @@ article {
 
 footer {
   background-color: #F7F1E3;
-  padding-top: 20px; }
+  padding-top: 5px; }
   footer p.text-center {
     padding-bottom: 5px;
-    margin: 0;
-    padding: 0.5em; }
+    margin: 0; }
     footer p.text-center a {
       text-decoration: none;
       color: #323232;
       font-size: 0.7em; }
-      footer p.text-center a a:hover {
-        color: #f8bbd0; }
+    footer p.text-center a:hover {
+      color: #f8bbd0; }
 
 p {
   color: #323232;
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Pragati Narrow', sans-serif;
   font-size: 0.9em;
   text-align: left; }
   p var {
@@ -78,6 +78,7 @@ ul, ol {
 .sabor {
   padding: 10px;
   font-size: 0.9em;
+  font-family: 'Pragati Narrow', sans-serif;
   max-width: 500px; }
 
 .sabor > li {
@@ -98,13 +99,16 @@ ul, ol {
 
 .navbar-toggler {
   padding: .02rem .5rem;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  font-family: 'Pragati Narrow', sans-serif; }
 
 a.menu-item.navbar-brand {
-  font-size: 1em; }
+  font-size: 1em;
+  font-family: 'Pragati Narrow', sans-serif; }
 
 a.menu-item.nav-item.nav-link {
-  font-size: 12px; }
+  font-size: 12px;
+  font-family: 'Pragati Narrow', sans-serif; }
 
 /*INDEX*/
 .articulo-principal {
@@ -124,7 +128,7 @@ a.menu-item.nav-item.nav-link {
     flex: 1; }
     .articulo-principal .articulo-principal__div-parrafo .div-parrafo__parrafo-principal {
       color: #323232;
-      font-family: "Source Code Pro", monospace;
+      font-family: 'Lobster Two', cursive;
       font-size: 10px;
       margin: auto;
       padding: 10px;
@@ -140,7 +144,7 @@ a.menu-item.nav-item.nav-link {
   margin-bottom: 25px; }
   .div-contactanos .div-contactanos__redes-contacto {
     color: #f8bbd0;
-    font-family: "Source Code Pro", monospace;
+    font-family: 'Pragati Narrow', sans-serif;
     font-size: 10px;
     text-align: center;
     padding: 5px;
@@ -148,10 +152,10 @@ a.menu-item.nav-item.nav-link {
     .div-contactanos .div-contactanos__redes-contacto a {
       text-decoration: none;
       color: #323232; }
-
-.redesDeContacto:hover {
-  background-color: pink;
-  color: white; }
+  .div-contactanos .div-contactanos__redes-contacto:hover {
+    background-color: #fce4ec; }
+    .div-contactanos .div-contactanos__redes-contacto:hover a {
+      color: #f8bbd0; }
 
 /*FORM CONTACTO*/
 fieldset {
@@ -160,7 +164,7 @@ fieldset {
 
 form {
   color: #323232;
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Pragati Narrow', sans-serif;
   font-size: 12px;
   display: inline-block; }
 
@@ -175,7 +179,8 @@ select {
   margin: 4px;
   border: 0px;
   width: 200px;
-  height: 20px; }
+  height: 20px;
+  border-radius: 50px; }
 
 textarea {
   margin: 4px;
@@ -192,8 +197,8 @@ textarea {
   justify-content: center; }
 
 .inputEnviar {
-  font-family: "Josefin Sans", sans-serif;
-  background-color: pink; }
+  font-family: 'Pragati Narrow', sans-serif;
+  background-color: #fce4ec; }
 
 .div__logo {
   height: 100px;
@@ -204,14 +209,14 @@ textarea {
 
 .pieDeTabla {
   color: #323232;
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Pragati Narrow', sans-serif;
   font-size: 0.9em;
   text-align: center; }
 
 .ul__li-medios-de-pago {
   color: black;
   font-size: 10px;
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Pragati Narrow', sans-serif;
   text-align: left; }
 
 .pedidos, .parrafos-about .nuestraHistoria {
@@ -234,6 +239,10 @@ textarea {
     background-color: #ffeeff; }
   .div-tarjetas .card-body {
     background-color: #ffeeff; }
+    .div-tarjetas .card-body h5 {
+      font-family: 'Pragati Narrow', sans-serif; }
+    .div-tarjetas .card-body p {
+      font-family: 'Pragati Narrow', sans-serif; }
 
 @media only screen and (min-width: 554px) {
   .div__logo {
@@ -310,12 +319,16 @@ textarea {
     font-size: 25px;
     margin: auto;
     padding: 20px; }
+  p.div-contactanos.div-contactanos__redes-contacto.text-center {
+    font-size: 20px; }
   .pedidos, .parrafos-about .nuestraHistoria {
     width: 700px; }
   .div-tarjetas {
     max-width: 50%; }
   .sabor {
-    width: 500px; } }
+    width: 500px; }
+  footer p {
+    font-size: 20px; } }
 
 @media only screen and (min-width: 1200px) {
   .div__logo {
@@ -327,7 +340,7 @@ textarea {
   h3 {
     font-size: 30px; }
   h4 {
-    font-size: 20px; }
+    font-size: 25px; }
   .articulo-principal .articulo-principal__div-parrafo .div-parrafo__parrafo-principal {
     font-size: 30px;
     margin: auto;
@@ -339,6 +352,11 @@ textarea {
     width: 300px;
     height: 30px; }
   form {
-    font-size: 10px; }
+    font-size: 15px; }
+  select {
+    width: 300px;
+    height: 30px; }
+  .inputEnviar {
+    font-size: 15px; }
   div p {
-    font-size: 0.8rem; } }
+    font-size: 1.5em; } }
