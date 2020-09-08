@@ -95,6 +95,16 @@ p {
         var {
         font-weight: bolder;
         }
+
+        a{
+            text-decoration: none;
+            color:black;
+            font-weight: bolder;
+        }
+
+        a:hover{
+            color:brown;
+        }
 }
 
 /*PRODUCTOS*/
@@ -243,6 +253,7 @@ form {
     width: $anchoform;
     height: $altoform; 
 }
+
 input  {
     @include  forma ($margenform, $bordeform, $anchoform, $altoform);
     border-radius: 50px;
@@ -308,10 +319,12 @@ textarea {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
         .nuestraHistoria {
             @extend .pedidos
         }
-}
+    }
+
 
 .div-tarjetas{
     max-width: 80%;
@@ -320,12 +333,10 @@ textarea {
 
     .card{
         background-color: #ffeeff;
-    }
-
-    .card-body{
-        background-color:#ffeeff;
+        margin-bottom: 15px;
     }
 }
+
 .card-title{
     font-family:'Pragati Narrow', sans-serif;
     text-align: center;
